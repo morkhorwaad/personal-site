@@ -1,0 +1,26 @@
+html, body {
+    margin: 0 
+}
+
+$margin-tb: 5vh;
+$margin-lr: 10vw;
+
+main {
+    display: flex !important;
+    flex-flow: column nowrap;
+    margin: $margin-tb $margin-lr;
+    min-height: calc(100vh - 2 * #{$margin-tb});
+    width: calc(100vw - 2 * #{$margin-lr});
+    justify-content: center;
+}
+    
+footer {
+    display: flex !important;
+    flex-flow: row nowrap;
+
+    svg {
+        margin-right: 1em;
+    }
+}
+
+
