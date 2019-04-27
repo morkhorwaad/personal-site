@@ -1,18 +1,18 @@
 import Typography from "typography"
 
 const typography = new Typography({
-  baseFontSize: "36px",
+  baseFontSize: "24px",
   baseLineHeight: 1.666,
   blockMarginBottom: 1,
   headerFontFamily: [
-    "Avenir Next",
+    "Raleway",
     "Helvetica Neue",
     "Segoe UI",
     "Helvetica",
     "Arial",
     "sans-serif",
   ],
-  bodyFontFamily: ["Georgia", "serif"],
+  bodyFontFamily: ["Merriweather", "Georgia", "serif"],
 })
 
 

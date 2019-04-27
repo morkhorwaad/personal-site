@@ -1,26 +1,11 @@
-html, body {
-    margin: 0 
-}
+@import '../styles/variables.scss';
 
-$margin-tb: 5vh;
-$margin-lr: 10vw;
+div.layout {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: calc(100vh - #{$global-margin-tb});
+}
 
 main {
-    display: flex !important;
-    flex-flow: column nowrap;
-    margin: $margin-tb $margin-lr;
-    min-height: calc(100vh - 2 * #{$margin-tb});
-    width: calc(100vw - 2 * #{$margin-lr});
-    justify-content: center;
+    flex-grow: 2;
 }
-    
-footer {
-    display: flex !important;
-    flex-flow: row nowrap;
-
-    svg {
-        margin-right: 1em;
-    }
-}
-
-

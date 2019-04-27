@@ -1,0 +1,14 @@
+nav.navBar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+nav.navBar > a {
+    margin-left: 1em;
+}
+
+nav.navBar > a:first-child {
+    margin-right: auto;
+    margin-left: 0;
+}
