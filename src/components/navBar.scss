@@ -1,14 +1,30 @@
+@import '../styles/variables.scss';
+
 nav.navBar {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-}
+    flex-flow: column nowrap;
 
-nav.navBar > a {
-    margin-left: 1em;
-}
+    grid-area: nav;
 
-nav.navBar > a:first-child {
-    margin-right: auto;
-    margin-left: 0;
+    @media screen and (max-device-width: $media-md) {
+        a {
+            display: none;
+        }
+
+        &.menuOpen {
+            position: absolute; 
+            width: $main-width;
+            height: $main-height;
+            background-color: whitesmoke;
+            a {
+                display: block;
+            }
+        }
+    }
+
+    @media screen and (min-device-width: $media-md) {
+        button.menuButton {
+            display: none;
+        }
+    }
 }

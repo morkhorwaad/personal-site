@@ -1,11 +1,28 @@
 @import '../styles/variables.scss';
 
 div.layout {
-    display: flex;
-    flex-flow: column nowrap;
-    min-height: calc(100vh - #{$global-margin-tb});
+    display: grid;
+    grid-template-columns: 20vw repeat(3, 1fr);
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas:
+        "title title title title"
+        "nav main main main"
+        "footer . . .";
+    height: $main-height;
+
+    @media screen and (max-device-width: $media-md) {
+        grid-template-areas:
+        "title title . nav"
+        "main main main main"
+        ". footer footer ."
+    }
 }
 
 main {
-    flex-grow: 2;
+    grid-area: main;
+    overflow: scroll;
+}
+
+.logo {
+    grid-area: title;
 }

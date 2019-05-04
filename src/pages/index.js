@@ -1,14 +1,15 @@
 import React from 'react'
 
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = ({data, location}) => (
+  <Layout location={location}>
     <SEO title="Mark Harwood" keywords={[`mark harwood`, `web developer`]} />
 
     <header className="page_header"> 
-      <h1>Hey! I'm Mark.</h1>
+      <h1>Index header</h1>
     </header>
 
     <p>

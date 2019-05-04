@@ -1,8 +1,16 @@
 $global-margin-tb: 5vh;
 $global-margin-lr: 10vw;
+$main-width: calc(100vw - 2 * #{$global-margin-lr});
+$main-height: calc(100vh - #{$global-margin-tb});
 
 $background_color: hsla(0,0%,0%,.01);
 
 $link_btn_color: hsla(0,0%,0%,.5);
 $link_btn_color--hover: hsla(0,0%,0%,.8);
 $link_btn_color--visited: hsla(0,0%,0%,1);
+
+// media query breakpoints
+$media-sm: 360px;
+$media-md: 750px;
+$media-lg: 1100px;
+$media-xl: 1400px;

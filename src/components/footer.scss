@@ -1,8 +1,13 @@
+@import '../styles/variables.scss';
+
 footer.footer {
     display: flex;
-    justify-content: center;
+    grid-area: footer;
 
-    margin-top: auto;
+    @media screen and (max-device-width: $media-md) {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 footer.footer > * {
