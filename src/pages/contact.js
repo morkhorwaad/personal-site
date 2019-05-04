@@ -3,17 +3,33 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-const ContactPage = () => (
-    <Layout>
-        <SEO title="Contact" keywords={[]} />
+const ContactPage = ({data}) => {
+    const md = data.markdownRemark;
+    const { html, frontmatter } = md;
+    
+    return (
+        <Layout>
+            <SEO title="Contact" keywords={[]} />
 
-        <header className="page_header">
-            <h1>Get in touch</h1>
-        </header>
+            <header className="page_header">
+                <h1>{ frontmatter.title }</h1>
+            </header>
 
-        <p>This is the contact page</p>
-    </Layout>
-)
+            <section dangerouslySetInnerHTML={{ __html: html }} />
+        </Layout>
+    )
+}
 
+export const pageQuery = graphql`
+  query {
+    markdownRemark(frontmatter: { pageFor: { eq: "Contact" } }) {
+      html
+      frontmatter {
+        pageFor
+        title
+      }
+    }
+  }
+`
 
 export default ContactPage

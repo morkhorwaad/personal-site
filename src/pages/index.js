@@ -4,18 +4,33 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-const IndexPage = ({data, location}) => (
-  <Layout location={location}>
-    <SEO title="Mark Harwood" keywords={[`mark harwood`, `web developer`]} />
+const IndexPage = ({data, location}) => {
+  const md = data.markdownRemark;
+  const { html, frontmatter } = md;
 
-    <header className="page_header"> 
-      <h1>Index header</h1>
-    </header>
+  return (
+    <Layout location={location}>
+      <SEO title="Mark Harwood" keywords={[`mark harwood`, `web developer`]} />
 
-    <p>
-      I make websites, applications, and all sorts of fun things - especially on the web. 
-    </p>
-  </Layout>
-)
+      <header className="page_header"> 
+        <h1>{ frontmatter.title }</h1>
+      </header>
+
+      <section dangerouslySetInnerHTML={{ __html: html }} />
+    </Layout>
+  )
+}
+
+export const pageQuery = graphql`
+  query {
+    markdownRemark(frontmatter: { pageFor: { eq: "Index" } }) {
+      html
+      frontmatter {
+        pageFor
+        title
+      }
+    }
+  }
+`
 
 export default IndexPage

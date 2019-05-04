@@ -1,18 +1,36 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-const ProjectsPage = () => (
-    <Layout>
-        <SEO title="Projects" keywords={[]} />
+const ProjectsPage = ({data}) => {
+    const md = data.markdownRemark;
+    const { html, frontmatter } = md;
 
-        <header className="page_header">
-            <h1>What I do</h1>
-        </header>
+    return (
+        <Layout>
+            <SEO title="Projects" keywords={[]} />
 
-        <p>This is the projects page</p>
-    </Layout>
-)
+            <header className="page_header">
+                <h1>{ frontmatter.title }</h1>
+            </header>
+
+            <section dangerouslySetInnerHTML={{ __html: html }} />
+        </Layout>
+    )
+}
+
+export const pageQuery = graphql`
+  query {
+    markdownRemark(frontmatter: { pageFor: { eq: "Projects" } }) {
+      html
+      frontmatter {
+        pageFor
+        title
+      }
+    }
+  }
+`
 
 export default ProjectsPage

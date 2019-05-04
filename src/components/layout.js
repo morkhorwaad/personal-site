@@ -7,32 +7,15 @@ import Footer from './footer'
 import './layout.scss'
 import '../styles/global.scss'
 
-const Layout = ({ children, location }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            pages {
-              title
-            }
-          }
-        }
-      }
-    `}
-    render={data => {
-      return (
-        <div className="layout">
-          <Link to="/" className="logo">Mark Harwood</Link>
-          <NavBar />
-          <main>
-            {children}
-          </main>
-          <Footer />
-        </div>
-      )
-  }}
-  />
+const Layout = ({ children }) => (
+  <div className="layout">
+    <Link to="/" className="logo">Mark Harwood</Link>
+    <NavBar />
+    <main>
+      {children}
+    </main>
+    <Footer />
+  </div>
 )
 
 Layout.propTypes = {
