@@ -30,6 +30,7 @@ class NavBar extends Component {
       <nav className={navClass}>
         <button onClick={this.toggleMenu} className="menuButton">Menu</button>
         <Link onClick={this.closeMenu} to="/">Home</Link>
+        <Link onClick={this.closeMenu} to="/blog">Blog</Link>
         <Link onClick={this.closeMenu} to="/projects">Projects</Link>
         <Link onClick={this.closeMenu} to="/about">About</Link>
         <Link onClick={this.closeMenu} to="/contact">Contact</Link>

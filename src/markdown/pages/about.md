@@ -1,5 +1,4 @@
 ---
-date: "2017-11-07"
 pageFor: "About"
 title: "A little about me"
 ---
