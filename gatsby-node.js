@@ -30,8 +30,9 @@ exports.createPages = async function ({ actions, graphql }) {
               id
               frontmatter {
                 title
-                date(formatString: "MMMM DD, YYYY")
+                link
                 path
+                date
               }
               html
             }

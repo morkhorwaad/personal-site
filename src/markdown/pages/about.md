@@ -3,9 +3,17 @@ pageFor: "About"
 title: "A little about me"
 ---
 
-# ABOUT PAGE???
-What about this
+**Professionally**, I'm a software developer. I generally lean toward web development and design, but I'm just as comfortable in the back end. The difficulty is that I'm fascinated by everything in the software lifecycle: from developer (DevOps, automation), to client (management, consultation), to end user (accessibility, design) &mdash; all on top of sound architecture, clean code, and scalability. 
 
-*oooh*
-_ooh_
-**bah**
+The phrase "jack of all trades, master of none" comes to mind. I'm working on getting better at pinning down focus. 
+
+If you're interested in poking around my code, you can check out my [GitHub](https://github.com/morkhorwaad), and any projects that can stand on their own I'll write about here. You can download [my resume](/downloads/mark_harwood_resume.pdf) as well; if you have any other questions, I'm most available via [email](/contact).
+
+**Personally**, I'm a lot of things, but some of my biggest interests are rock climbing, cooking, and generally slowing down just a little bit. 
+
+
+
+## The site? 
+I wrote this site in [Gatsby](https://gatsbyjs.org), and you can view the source [here](https://github.com/morkhorwaad/personal-site). It's pretty straightforward React, and the blog articles and project pages are all done in Markdown - I wrote [an article](/blog/making-my-site) about it if you want to know more. 
+
+Currently, I'm using [GitLab Pages](https://about.gitlab.com/product/pages/) to host it, and as I add more functionality I'll be sure to keep the site updated as well.

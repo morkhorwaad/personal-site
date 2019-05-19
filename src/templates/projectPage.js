@@ -7,7 +7,11 @@ const ProjectPage =({ data }) => {
   return (
     <Layout>
       <div>
-        <h1>{post.frontmatter.title}</h1>
+        <header>
+          <h1>{post.frontmatter.title}</h1>
+          <a href={post.frontmatter.link}>{post.frontmatter.link}</a>
+        </header>
+        
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
@@ -23,6 +27,8 @@ export const query = graphql`
       frontmatter {
         title
         path
+        link
+        date
       }
     }
   }

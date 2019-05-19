@@ -22,6 +22,8 @@ const ProjectsPage = ({
       <h1>{markdownRemark.frontmatter.title}</h1>
     </header>
 
+    <section dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
+
     <section>
       {Projects}
     </section>
@@ -41,8 +43,9 @@ query {
          id
          frontmatter {
            title
-           date(formatString: "MMMM DD, YYYY")
+           link
            path
+           date
          }
        }
      }

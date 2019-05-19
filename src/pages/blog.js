@@ -21,6 +21,8 @@ const BlogPage = ({
       <h1>{markdownRemark.frontmatter.title}</h1>
     </header>
 
+    <section dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
+
     <section>
       {Posts}
     </section>

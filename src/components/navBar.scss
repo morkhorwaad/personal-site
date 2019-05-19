@@ -6,7 +6,7 @@ nav.navBar {
 
     grid-area: nav;
 
-    @media screen and (max-device-width: $media-md) {
+    @media screen and (max-width: $media-md) {
         a {
             display: none;
         }
@@ -22,7 +22,7 @@ nav.navBar {
         }
     }
 
-    @media screen and (min-device-width: $media-md) {
+    @media screen and (min-width: $media-md) {
         button.menuButton {
             display: none;
         }
