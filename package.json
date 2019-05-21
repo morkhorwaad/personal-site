@@ -1,23 +1,23 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "msh-personal-site",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Mark Harwood's personal site",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Mark Harwood <msharwood12@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.0.76",
-    "gatsby-image": "^2.0.20",
-    "gatsby-plugin-manifest": "^2.0.9",
-    "gatsby-plugin-offline": "^2.0.16",
+    "gatsby": "^2.6.0",
+    "gatsby-image": "^2.1.0",
+    "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-offline": "^2.1.1",
     "gatsby-plugin-react-helmet": "^3.0.2",
-    "gatsby-plugin-sharp": "^2.0.14",
+    "gatsby-plugin-sharp": "^2.0.37",
     "gatsby-plugin-typography": "^2.2.5",
-    "gatsby-source-filesystem": "^2.0.8",
-    "gatsby-transformer-sharp": "^2.1.8",
+    "gatsby-source-filesystem": "^2.0.37",
+    "gatsby-transformer-sharp": "^2.1.19",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-helmet": "^5.2.0",
+    "react-helmet": "^5.2.1",
     "react-typography": "^0.16.18",
     "typography": "^0.16.18"
   },
@@ -35,8 +35,8 @@
   "devDependencies": {
     "gatsby-plugin-sass": "^2.0.7",
     "node-sass": "^4.11.0",
-    "prettier": "^1.15.2",
-    "react-icons": "^3.3.0"
+    "prettier": "^1.17.1",
+    "react-icons": "^3.7.0"
   },
   "repository": {
     "type": "git",
