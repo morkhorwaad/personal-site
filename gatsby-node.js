@@ -1,11 +1,3 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
-
-// You can delete this file if you're not using it
-
 exports.createPages = async function ({ actions, graphql }) {
     const { data } = await graphql(`
       query {
@@ -32,14 +24,15 @@ exports.createPages = async function ({ actions, graphql }) {
                 title
                 link
                 path
-                date
+                date(formatString: "MMMM DD, YYYY")
               }
               html
             }
           }
         }
       }
-    `)
+    `);
+    console.log(data);
     data.blog.edges.forEach(edge => { 
         const path = edge.node.frontmatter.path   
         actions.createPage({ 

@@ -2,7 +2,7 @@
 path: "/projects/space-website"
 title: "SPACE Online"
 link: "https://spaceinvt.com"
-date: "05-18-2019"
+date: "2019-05-08"
 ---
 
 The first product I build &mdash; that actually went live &mdash; was the website for SPACE. Full disclosure, this is a project I undertook for [my mom, Alice](https://aliceharwood.com) and was done with love pro bono (duh). 
