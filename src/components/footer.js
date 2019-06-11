@@ -6,10 +6,6 @@ import './footer.scss'
 
 const Footer = () => (
     <footer className="footer">
-        <IconLink link="https://instagram.com/morkhorwaad" title="Mark's Instagram">
-            <FaInstagram />
-          </IconLink>
-
           <IconLink link="https://twitter.com/morkhorwaad" title="Mark's Twitter">
             <FaTwitter />
           </IconLink>

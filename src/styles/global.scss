@@ -1,21 +1,12 @@
 @import './variables.scss';
+@import './mixins.scss';
 
 html {
     margin: $global-margin-tb $global-margin-lr 0 $global-margin-lr !important;
     width: $main-width;
-    background-color: $background_color;
+    background-color: $background-color;
+    color: $black;
 }
-
-// header.page_header {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-end;
-//     margin-bottom: 1em;
-
-//     h1 {
-//         margin: 0;
-//     }
-//}
 
 a {
     color: $link_btn_color; // cheating!!

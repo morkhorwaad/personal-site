@@ -6,6 +6,16 @@ nav.navBar {
 
     grid-area: nav;
 
+    $nav-transition-time: .4s;
+    transition-timing-function: ease;
+
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width $nav-transition-time, height $nav-transition-time, background-color $nav-transition-time, transform $nav-transition-time;
+
+    button.menuButton {
+        // TODO
+    }
+
     @media screen and (max-width: $media-md) {
         a {
             display: none;

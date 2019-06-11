@@ -4,7 +4,7 @@ footer.footer {
     display: flex;
     grid-area: footer;
 
-    @media screen and (max-device-width: $media-md) {
+    @media screen and (max-width: $media-md) {
         justify-content: center;
         align-items: center;
     }

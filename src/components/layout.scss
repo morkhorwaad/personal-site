@@ -7,7 +7,7 @@ div.layout {
     grid-template-areas:
         "title title title title"
         "nav main main main"
-        "footer . . .";
+        "footer main main main";
     height: $main-height;
 
     @media screen and (max-width: $media-md) {

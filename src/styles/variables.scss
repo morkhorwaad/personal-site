@@ -1,13 +1,27 @@
+// global colors
+$black: #222;
+$white: hsla(0,0%,0%,.01);
+$red: red;
+$green: lightgreen;
+$blue: lightblue;
+
+// color role assignment
+$primary-color: $blue;
+$secondary-color: $green;
+$error-color: $red;
+$background-color: $white;
+$text-color: $black;
+
+$link_btn_color: hsla(0,0%,0%,.5);
+$link_btn_color--hover: lighten($link_btn_color, 30%);
+$link_btn_color--visited: darken($link_btn_color, 30%);
+
+
+// layout stuff
 $global-margin-tb: 5vh;
 $global-margin-lr: 10vw;
 $main-width: calc(100vw - 2 * #{$global-margin-lr});
 $main-height: calc(100vh - #{$global-margin-tb});
-
-$background_color: hsla(0,0%,0%,.01);
-
-$link_btn_color: hsla(0,0%,0%,.5);
-$link_btn_color--hover: hsla(0,0%,0%,.8);
-$link_btn_color--visited: hsla(0,0%,0%,1);
 
 // media query breakpoints
 $media-sm: 360px;
