@@ -1,0 +1,13 @@
+@import '../styles/variables.scss';
+
+a.icon-link{
+
+    &:hover {
+        color: $primary-color;
+        background-color: $background-color;
+    }
+
+    &:focus {
+
+    }
+}

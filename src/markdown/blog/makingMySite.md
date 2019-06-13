@@ -44,7 +44,7 @@ So this is it! It's far from fancy, at the time of writing, at least. I specific
 
 I'm not going to write about how I made it &mdash; that would be just another article out in the void that I'm trying to get away from myself. I just wanted to get out the _why_ that's been sitting on my chest for a few years now. 
 
-I will say that I made it with [Gatsby](https://gatsbyjs.com), and that it's hosted on [GitLab Sites](https://about.gitlab.com/product/pages/). I'll also say that it was super easy to do, and would recommend those tools if you want to build one yourself! If you have questions about it, just [check out the code](https://github.com/morkhorwaad/personal-site), or [holler](/contact) if that doesn't answer it for you. 
+I will say that I made it with [Gatsby](https://gatsbyjs.com), and that it's hosted on [GitLab Sites](https://about.gitlab.com/product/pages/). I'll also say that it was super easy to do, and would recommend those tools if you want to build one yourself! If you have questions about it, just [check out the code](https://github.com/morkhorwaad/personal-site), or <a href="/contact" class="internal-link">holler</a> if that doesn't answer it for you. 
 
 
 

@@ -1,21 +1,17 @@
 // global colors
-$black: #222;
-$white: hsla(0,0%,0%,.01);
+$black: hsla(0, 0%, 0%, 0.8);
+$white: #fbfbfb;
 $red: red;
 $green: lightgreen;
 $blue: lightblue;
 
 // color role assignment
 $primary-color: $blue;
+$primary-complement: $black;
 $secondary-color: $green;
 $error-color: $red;
 $background-color: $white;
 $text-color: $black;
-
-$link_btn_color: hsla(0,0%,0%,.5);
-$link_btn_color--hover: lighten($link_btn_color, 30%);
-$link_btn_color--visited: darken($link_btn_color, 30%);
-
 
 // layout stuff
 $global-margin-tb: 5vh;

@@ -7,4 +7,4 @@ I build websites, and systems that support them. ["Web Developer" feels loaded](
 
 Anyway, you got here! The rest of the site has more to say &mdash; check it out. 
 
-If you're interested in connecting for a project or work opportunity, [get in touch](/contact) with some details on it and we'll connect. 
+If you're interested in connecting for a project or work opportunity, <a href="/contact" class="internal-link">get in touch</a> with some details on it and we'll connect. 

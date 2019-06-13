@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'
+import { FaTwitter, FaLinkedin } from 'react-icons/fa'
 
 import IconLink from './icon-link'
 import './footer.scss'

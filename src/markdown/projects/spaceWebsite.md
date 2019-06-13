@@ -1,7 +1,7 @@
 ---
 path: "/projects/space-website"
 title: "SPACE Online"
-link: "https://spaceinvt.com"
+link: "https://spaceinvermont.org"
 date: "2019-05-08"
 ---
 
