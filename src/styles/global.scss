@@ -52,18 +52,25 @@ a.internal-link {
     text-decoration: none;
     position: relative;
     white-space: nowrap;
+    z-index: 1;
 
     &::before {
         position: absolute;
+        z-index: -1;
         content: "";
         background-color: $primary-color;
         height: 2px;
         width: 100%;
-        top: 28px;
+        bottom: -2px;
+        transition: height 1s;
     }
 
     &:hover {
+        background-color: $background-color;
 
+        &::before {
+            height: 100%;
+        }
     }
 
     &:focus {
