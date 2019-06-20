@@ -11,7 +11,7 @@ const Layout = ({ children }) => (
   <div className="layout">
     <Link to="/" className="logo">Mark Harwood</Link>
     <NavBar />
-    <main>
+    <main className="fadeInMain">
       {children}
     </main>
     <Footer />

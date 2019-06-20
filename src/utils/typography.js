@@ -13,6 +13,11 @@ const typography = new Typography({
     "sans-serif",
   ],
   bodyFontFamily: ["Merriweather", "Georgia", "serif"],
+  overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
+    'a.logo': {
+      fontFamily: ['Raleway', 'sans-serif'].join(','),
+    },
+  })
 })
 
 

@@ -3,16 +3,17 @@
 div.layout {
     display: grid;
     grid-template-columns: 20vw repeat(3, 1fr);
-    grid-template-rows: 100px 1fr 100px;
+    grid-template-rows: $nav-height 1fr $footer-height;
+    grid-row-gap: $grid-gap;
     grid-template-areas:
         "title title title title"
         "nav main main main"
         "footer main main main";
-    height: $main-height;
+    height: $total-height;
 
     @media screen and (max-width: $media-md) {
         grid-template-areas:
-        "title title . nav"
+        "title title title nav"
         "main main main main"
         ". footer footer ."
     }
@@ -23,6 +24,22 @@ main {
     overflow: scroll;
 }
 
+main.fadeInMain {
+    animation-name: fadeIn;
+    animation-duration: .6s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
+
 .logo {
     grid-area: title;
+    line-height: $nav-height;
+    letter-spacing: 2px;
 }

@@ -3,39 +3,69 @@
 nav.navBar {
     display: flex;
     flex-flow: column nowrap;
-
     grid-area: nav;
-
-    $nav-transition-time: .4s;
-    transition-timing-function: ease;
-
-    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
-    transition: width $nav-transition-time, height $nav-transition-time, background-color $nav-transition-time, transform $nav-transition-time;
+    background-color: $background-color;
 
     @media screen and (max-width: $media-md) {
+        grid-area: main;
+        z-index: 2;
+
         a {
             display: none;
         }
 
+        &.a-menuOpen {
+            animation-name: openMenu;
+            animation-duration: .2s;
+        }
+
+        &.a-menuClose {
+            animation-name: closeMenu;
+            animation-duration: .2s;
+        }
+
+        &.menuClosed {
+            z-index: -2;
+        }
+
         &.menuOpen {
-            position: absolute; 
-            width: $main-width;
-            height: $main-height;
-            background-color: $background-color;
+            display: flex;
+            align-items: center;
+
             a {
                 display: block;
             }
         }
     }
+}
 
-    @media screen and (min-width: $media-md) {
-        button.menuButton {
-            display: none;
-        }
+@keyframes openMenu {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 
-nav.navBar button {
+@keyframes closeMenu {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+button.menuButton {
+    @media screen and (min-width: $media-md) {
+        display: none;
+    }
+
+    @media screen and (max-width: $media-md) {
+        grid-area: nav;
+    }
+
     background-color: $background-color;
     color: $primary-color;
     border: 1px solid $primary-color;
@@ -66,5 +96,15 @@ nav.navBar a {
 
     &:visited {
 
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
