@@ -2,6 +2,7 @@
 path: "/blog/making-my-site"
 date: "2019-11-07"
 title: "Making a personal site"
+description: "It's taken long enough..."
 ---
 
 I've been trying to make a personal website for a long time. 

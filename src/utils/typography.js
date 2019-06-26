@@ -17,6 +17,11 @@ const typography = new Typography({
     'a.logo': {
       fontFamily: ['Raleway', 'sans-serif'].join(','),
     },
+    'p.blog-post-item__description': {
+      ...adjustFontSizeTo('18px'),
+      fontStyle: 'italic',
+      lineHeight: '1'
+    },
   })
 })
 

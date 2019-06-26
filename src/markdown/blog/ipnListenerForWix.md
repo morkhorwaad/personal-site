@@ -2,6 +2,7 @@
 path: "/blog/ipn-listener-for-wix"
 date: "2019-21-06"
 title: "Setting up an IPN listener on a Wix website"
+description: "How to get PayPal payment notifications for further action"
 ---
 
 This is a quick-and-dirty explanation of how to add a PayPal IPN listener to a Wix website using Dev Mode. I've also put my _http-functions.js_ file in a gist, which is accessible [here](https://gist.github.com/morkhorwaad/4596b05d02a130069deed76496db8c0f).
@@ -41,9 +42,9 @@ export function post_IPNListner(request) {
 }
 ```
 
-These endpoints can be tested before the push to production, and can be reached at {yourSite}/_functions-dev/{yourFunctionName} when the site is being previewed. A console can also be brought up to view debug statements as well, which helped me quite a bit during this whole process.
+These endpoints can be tested before the push to production, and can be reached at `https://{yourSite}/_functions-dev/{yourFunctionName}` when the site is being previewed. A console can also be brought up to view debug statements as well, which helped me quite a bit during this whole process.
 
-By using [Postman](https://www.getpostman.com/) or some other tool, a POST to https://{site}/_functions-dev/post_IPNListener with just the snippet above in the _http-functions.js_ should yield the "In the IPN Listener!" message. 
+By using [Postman](https://www.getpostman.com/) or some other tool, a POST to `https://{site}/_functions-dev/post_IPNListener` with just the snippet above in the _http-functions.js_ should yield the "In the IPN Listener!" message. 
 
 ### Adding the listener logic
 

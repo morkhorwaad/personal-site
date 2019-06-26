@@ -10,6 +10,7 @@ exports.createPages = async function ({ actions, graphql }) {
                 title
                 date(formatString: "MMMM DD, YYYY")
                 path
+                description
               }
               html
             }

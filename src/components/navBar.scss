@@ -32,6 +32,7 @@ nav.navBar {
         &.menuOpen {
             display: flex;
             align-items: center;
+            width: 100%;
 
             a {
                 display: block;

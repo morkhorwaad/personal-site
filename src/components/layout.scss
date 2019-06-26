@@ -10,7 +10,6 @@ div.layout {
         "nav main main main"
         "footer main main main";
     height: $total-height;
-    justify-items: start;
 
     @media screen and (max-width: $media-md) {
         grid-template-areas:
@@ -43,4 +42,5 @@ main.fadeInMain {
     grid-area: title;
     line-height: $nav-height;
     letter-spacing: 2px;
+    justify-self: start;
 }
