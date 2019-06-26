@@ -32,7 +32,11 @@ Getting set up with the service is straightforward: there needs to be a small AP
 
 To start working on any of this stuff, the first thing that has to be done is turning on Dev Mode. When in the editor of your site, click the 'Dev Mode' button in the header, and then 'Enable Corvid'. This will open up a navigation pane on the left side of the screen, with pages, databases, server functionality, and more. 
 
+<img alt="Enable Corvid in Wix" src="./enableCorvid.png"/>
+
 With this open, make a new file in the Backend folder called _http-functions.js_. This is where API endpoints can be defined, provided the naming convention is consistent with what Wix expects. Documentation on this can be found [here](https://www.wix.com/corvid/reference/wix-http-functions.html), and goes into greater depth. 
+
+<img alt="Creating http-functions.js file in Backend folder" src="./httpFunctionsFile.png" />
 
 The IPN listener is expecting a POST endpoint, so to create one, write a new (exported) function definition with the name 'post_IPNListener', or 'post_yourFunctionName'. It should take in one parameter, the request.
 
@@ -63,6 +67,8 @@ In the gist posted, there are references to undefined functions: `logDebugMessag
 
 #### All the rest
 
+`gist:morkhorwaad/4596b05d02a130069deed76496db8c0f#http-functions.js`
+
 With the reason for async explained, I'll just focus on the `verifyIPNRequest` function, which gets the parsed body of the POST request. 
 
 PayPal expects a verification POST to come _back_, so the first thing that's done after defining the appropriate endpoints based on test/prod mode is put together the fetch options for the request. It's a POST, with the expected body to be exactly what was sent, except with `"cmd=_notify-validate&"` prepended. 
@@ -91,6 +97,8 @@ Before production testing can be done, the PayPal account has to be configured t
 To actually turn on these notifications, all that has to be done is provide the address of the POST endpoint created, and flip a switch. 
 
 After logging into PayPal, navigate to your Profile. On the navigation panel, in the 'Products and Services' section, click 'Website Payments'. On this page, there should be an option to update your Instant Payment Notification settings &mdash; that's where to go. 
+
+<img alt="Turn on Instant Payment Notification in PayPal Profile" src="paypalConfig.png" />
 
 Once there, enter in the production endpoint. With Wix, again, it varies depending on whether it's a free or a premium site. The one I was working on was premium, so my endpoint was `https://{mySite}/_functions/{myFunctionName}`. Also, be sure to select 'Receive IPN Messages (Enabled)'. 
 

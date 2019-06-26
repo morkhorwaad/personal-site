@@ -1,4 +1,4 @@
-import Typography from "typography"
+const Typography = require("typography")
 
 const typography = new Typography({
   baseFontSize: "24px",
@@ -25,5 +25,5 @@ const typography = new Typography({
   })
 })
 
-
-export default typography
+// Export helper functions
+module.exports = typography

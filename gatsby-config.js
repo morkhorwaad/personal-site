@@ -1,4 +1,4 @@
-
+const rhythm  = require('./src/utils/typography.js').rhythm
 
 module.exports = {
   siteMetadata: {
@@ -58,7 +58,29 @@ module.exports = {
         name: "markdown-blog",
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 590,
+              wrapperStyle: marginBottomResult => `margin-bottom:${rhythm(1)};`
+            },
+          },
+          {
+            resolve: "gatsby-remark-embed-gist",
+            options: {
+              username: 'morkhorwaad',
+            }
+          }
+        ],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
