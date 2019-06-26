@@ -10,6 +10,7 @@ div.layout {
         "nav main main main"
         "footer main main main";
     height: $total-height;
+    justify-items: start;
 
     @media screen and (max-width: $media-md) {
         grid-template-areas:

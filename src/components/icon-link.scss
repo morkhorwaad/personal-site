@@ -1,6 +1,7 @@
 @import '../styles/variables.scss';
 
 a.icon-link{
+    border: none;
 
     &:hover {
         color: $primary-color;

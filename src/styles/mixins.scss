@@ -3,3 +3,7 @@
 // - animations/transitions
 // etc. 
 
+@mixin link-reset {
+    text-decoration: none;
+    border: none;
+}

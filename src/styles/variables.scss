@@ -1,13 +1,13 @@
 // global colors
 $black: hsla(0, 0%, 0%, 0.8);
-$white: #fbfbfb;
+$white: #fefefe;
 $red: red;
-$green: lightgreen;
-$blue: lightblue;
+$green: #4B966E;
+$blue: 	#579CBF;
 
 // color role assignment
 $primary-color: $blue;
-$primary-complement: $black;
+$primary-complement: $white;
 $secondary-color: $green;
 $error-color: $red;
 $background-color: $white;

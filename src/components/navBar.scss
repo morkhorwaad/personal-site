@@ -3,6 +3,7 @@
 nav.navBar {
     display: flex;
     flex-flow: column nowrap;
+    align-items: flex-start;
     grid-area: nav;
     background-color: $background-color;
 
@@ -69,7 +70,7 @@ button.menuButton {
     background-color: $background-color;
     color: $primary-color;
     border: 1px solid $primary-color;
-    transition: color .3s;
+    transition: color .4s;
 
     &:hover {
         color: $background-color;
@@ -84,6 +85,7 @@ button.menuButton {
 // links
 nav.navBar a {
     text-decoration: none;
+    border: none;
 
     &:hover {
         color: $primary-color;
