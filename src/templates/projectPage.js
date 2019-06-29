@@ -9,7 +9,6 @@ const ProjectPage =({ data }) => {
       <div>
         <header>
           <h1>{post.frontmatter.title}</h1>
-          <a href={post.frontmatter.link}>{post.frontmatter.link}</a>
         </header>
         
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -27,7 +26,6 @@ export const query = graphql`
       frontmatter {
         title
         path
-        link
         date
       }
     }

@@ -40,7 +40,8 @@ main.fadeInMain {
 
 .logo {
     grid-area: title;
-    line-height: $nav-height;
+    line-height: initial;
     letter-spacing: 2px;
     justify-self: start;
+    align-self: center;
 }

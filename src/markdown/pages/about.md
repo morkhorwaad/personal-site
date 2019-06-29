@@ -7,13 +7,13 @@ title: "A little about me"
 
 The phrase "jack of all trades, master of none" comes to mind. I'm working on getting better at pinning down focus. 
 
-If you're interested in poking around my code, you can check out my [GitHub](https://github.com/morkhorwaad), and any projects that can stand on their own I'll write about here. You can download [my resume](/downloads/mark_harwood_resume.pdf) as well; if you have any other questions, I'm most available via <a href="/contact" class="internal-link">email</a>.
+If you're interested in poking around my code, you can check out my [GitHub](https://github.com/morkhorwaad), and any projects that can stand on their own I'll write about here. You can download [my resume](/downloads/mark_harwood_resume.pdf) as well; if you have any other questions, feel free to <a href="/contact" class="internal-link">reach out</a>.
 
 **Personally**, I'm a lot of things, but some of my biggest interests are rock climbing, cooking, and generally slowing down just a little bit. 
 
 
 
 ## The site? 
-I wrote this site in [Gatsby](https://gatsbyjs.org), and you can view the source [here](https://github.com/morkhorwaad/personal-site). It's pretty straightforward React, and the blog articles and project pages are all done in Markdown - I wrote <a href="/blog/making-my-site" class="internal-link">an article</a> about it if you want to know more. 
+I wrote this site in [Gatsby](https://gatsbyjs.org), host it with [GitLab Pages](https://about.gitlab.com/product/pages/), and you can view the source [here](https://github.com/morkhorwaad/personal-site). It's pretty straightforward React, and the blog articles and project pages are all done in Markdown - I wrote <a href="/blog/making-my-site" class="internal-link">an article</a> about it if you want to know more. 
 
-Currently, I'm using [GitLab Pages](https://about.gitlab.com/product/pages/) to host it, and as I add more functionality I'll be sure to keep the site updated as well.
+It's a work in progress, and probably always will be &mdash; that's the fun part! 

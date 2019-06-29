@@ -32,7 +32,7 @@ a {
 
 a {
     color: $text-color;
-    transition: .2s;
+    transition: color .2s;
     text-decoration: none;
     border-bottom: 2px dashed $text-color;
 
@@ -42,12 +42,12 @@ a {
         border-color: $primary-complement;
     }
 
-    &:visited {
-
+    &:focus {
+        outline: 2px solid $primary-color;
     }
 
-    &:focus {
-
+    &:active {
+        // TODO!
     }
 }
 
@@ -78,10 +78,6 @@ a.internal-link {
         &::before {
             height: 75%;
         }
-    }
-
-    &:focus {
-
     }
 }
 
