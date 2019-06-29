@@ -38,25 +38,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-source-filesystem`, 
       options: {
-        path: `${__dirname}/src/markdown/pages`,
-        name: "markdown-pages",
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/markdown/projects`,
-        name: "markdown-projects",
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/markdown/blog`,
-        name: "markdown-blog",
-      },
+        path: `${__dirname}/src/markdown`,
+        name: "markdown"
+      }
     },
     {
       resolve: `gatsby-transformer-remark`,

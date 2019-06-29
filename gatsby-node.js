@@ -32,7 +32,7 @@ exports.createPages = async function ({ actions, graphql }) {
         }
       }
     `);
-    console.log(data);
+
     data.blog.edges.forEach(edge => { 
         const path = edge.node.frontmatter.path   
         actions.createPage({ 
@@ -47,5 +47,5 @@ exports.createPages = async function ({ actions, graphql }) {
           path, 
           component: require.resolve(`./src/templates/projectPage.js`), 
       }) 
-  })
+    })
 }
