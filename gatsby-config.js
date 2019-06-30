@@ -6,7 +6,6 @@ module.exports = {
     description: `Mark Harwood is a web developer, UX enthusiast, aspiring designer, and learning human. He does cyber. This is his site.`,
     author: `@morkhorwaad`,
   },
-  pathPrefix: `/personal-site`,
   plugins: [
     `gatsby-plugin-sass`,
     {
