@@ -26,7 +26,7 @@ const ProjectsPage = ({
 
     <section>
       {Projects.length > 0 
-        ? {Projects}
+        ? Projects
         : <p>Right now, all of my projects are works in progress. Take a look at <a href="https://www.github.com/morkhorwaad">my GitHub</a> to see what I'm up to, and back here to see the writeup when I'm done!</p>
       }
     </section>

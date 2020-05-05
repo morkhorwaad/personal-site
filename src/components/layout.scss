@@ -21,7 +21,7 @@ div.layout {
 
 main {
     grid-area: main;
-    overflow: scroll;
+    overflow: auto;
 }
 
 main.fadeInMain {
