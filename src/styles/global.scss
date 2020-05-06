@@ -94,3 +94,21 @@ a.logo {
 
     }
 }
+
+
+/// FORMS UGH
+form {
+    display: grid; 
+    row-gap: 1em;
+
+    label {
+        display: flex; 
+        flex-flow: column nowrap; 
+    }
+
+    input {
+        &:focus {
+            outline: 2px solid $primary-color;
+        }
+    }
+}

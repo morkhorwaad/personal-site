@@ -17,6 +17,26 @@ const ContactPage = ({data}) => {
             </header>
 
             <section dangerouslySetInnerHTML={{ __html: html }} />
+
+            <form>
+              <label for="name">
+                Name
+                <input name="name" id="name" type="text" />
+              </label>
+
+              <label for="email">
+                Email
+                <input name="email" id="email" type="email" />
+              </label>
+
+              <label for="message">
+                What's up?
+                <textarea name="message" id="message" height="5" />
+              </label>
+
+              <button type="submit">Send it!</button>
+              <input type="reset" value="Clear" />
+            </form>
         </Layout>
     )
 }
