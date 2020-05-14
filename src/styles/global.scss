@@ -106,9 +106,35 @@ form {
         flex-flow: column nowrap; 
     }
 
-    input {
-        &:focus {
+    input, textarea {
+        border: 1px solid $gray;
+        outline: 0px solid $primary-color;
+        transition: outline .1s;
+        
+        &:focus, &:hover {
             outline: 2px solid $primary-color;
+            transition: outline .1s;
         }
+
+        &[type="reset"] {
+            outline: 2px solid $primary-color;
+            background-color: $primary-complement;
+            color: $primary-color;
+
+            &:hover {
+                background-color: $primary-color;
+                color: $primary-complement; 
+            }
+        }
+
     }
-}
+ 
+ } 
+
+ button {
+     background-color: $primary-color;
+     color: $primary-complement;
+     outline: 0px solid $primary-color;
+     transition: outline.2s;
+     border: none;
+ }

@@ -22,6 +22,7 @@ div.layout {
 main {
     grid-area: main;
     overflow: auto;
+    padding: 0 2px 0 2px;
 }
 
 main.fadeInMain {
