@@ -7,7 +7,7 @@ title: "A little about me"
 
 The phrase "jack of all trades, master of none" comes to mind. I'm working on getting better at pinning down focus. 
 
-If you're interested in poking around my code, you can check out my [GitHub](https://github.com/morkhorwaad), and any projects that can stand on their own I'll write about here. You can download [my resume](/downloads/Mark_Harwood_Resume.pdf) as well; if you have any other questions, feel free to <a href="/contact" class="internal-link">reach out</a>.
+If you're interested in poking around my code, you can check out my [GitHub](https://github.com/morkhorwaad), and any projects that can stand on their own I'll write about here. You can download [my resume](/downloads/mark_harwood_resume.pdf) as well; if you have any other questions, feel free to <a href="/contact" class="internal-link">reach out</a>.
 
 **Personally**, I'm a lot of things, but some of my biggest interests are rock climbing, cooking, and generally slowing down just a little bit. 
 
