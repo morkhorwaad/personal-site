@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Mark Harwood <msharwood12@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.9.2",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.2.3",
     "gatsby-plugin-manifest": "^2.0.9",
     "gatsby-plugin-offline": "^2.1.3",
