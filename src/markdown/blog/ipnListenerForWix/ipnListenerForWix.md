@@ -1,6 +1,6 @@
 ---
 path: "/blog/ipn-listener-for-wix"
-date: "2019-21-06"
+date: "2019-06-21"
 title: "Setting up an IPN listener on a Wix website"
 description: "How to get PayPal payment notifications for further action"
 ---
