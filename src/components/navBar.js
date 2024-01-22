@@ -14,6 +14,9 @@ class NavBar extends Component {
     this.menuClick = this.menuClick.bind(this)
     this.closeMenu = this.closeMenu.bind(this)
     this.removeAnimationClasses = this.removeAnimationClasses.bind(this)
+
+    this.MENU_OPEN_TEXT = "Back";
+    this.MENU_CLOSED_TEXT = "Menu";
   }
   
   menuClick() {
@@ -45,7 +48,7 @@ class NavBar extends Component {
 
     return (
       <>
-        <button onClick={this.menuClick} className="menuButton">Menu</button>
+        <button onClick={this.menuClick} className="menuButton">{this.state.menuOpen ? this.MENU_OPEN_TEXT : this.MENU_CLOSED_TEXT}</button>
         <nav className={navClass} onAnimationEnd={this.removeAnimationClasses}>
           <Link onClick={this.closeMenu} to="/">Home</Link>
           <Link onClick={this.closeMenu} to="/blog">Blog</Link>

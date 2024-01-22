@@ -42,16 +42,16 @@ a {
     color: $text-color;
     transition: color .2s;
     text-decoration: none;
-    border-bottom: 2px dashed $text-color;
+    border-bottom: 2px dashed $accent-color;
 
     &:hover {
-        color: $primary-complement;
-        background-color: $primary-color;
-        border-color: $primary-complement;
+        color: $accent-complement;
+        background-color: $accent-color;
+        border-color: $accent-complement;
     }
 
     &:focus {
-        outline: 2px solid $primary-color;
+        outline: 2px solid $accent-color;
     }
 
     &:active {
@@ -72,7 +72,7 @@ a.internal-link {
         display: inline-block;
         z-index: -1;
         content: "";
-        background-color: $primary-color;
+        background-color: $accent-color;
         height: 2px;
         width: 108%;
         bottom: 4px;
@@ -81,8 +81,8 @@ a.internal-link {
     }
 
     &:hover {
-        background-color: $background-color;
-        color: $primary-complement;
+        background-color: $accent-complement;
+        color: $accent-complement;
 
         &::before {
             height: 75%;

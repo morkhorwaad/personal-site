@@ -5,7 +5,7 @@ div.layout {
     grid-template-columns: 20vw repeat(3, 1fr);
     grid-template-rows: $nav-height 1fr $footer-height;
     grid-row-gap: $grid-row-gap;
-    grid-gap: $grid-col-gap;
+    grid-column-gap: $grid-col-gap;
     grid-template-areas:
         "title . . ."
         "nav main main main"
@@ -68,7 +68,7 @@ main.fadeInMain {
     width: auto;
     max-height: 100%;
     max-width: 100%;
-    
+    margin-left: -5px;
 
     path {
         transition: fill 0.2s;
@@ -77,7 +77,7 @@ main.fadeInMain {
 
     &:hover {
         path {
-            fill: $primary-color;
+            fill: $accent-color;
         }
         
     }
