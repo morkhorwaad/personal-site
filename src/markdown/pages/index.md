@@ -1,10 +1,12 @@
 ---
 pageFor: "Index"
-title: "I'm Mark. This is my site."
+title: "Actually, my name is Mark."
 ---
 
-I build websites, and systems that support them. ["Web Developer" feels loaded](https://vimeo.com/331569372) and so does "Full-stack developer", but I do work at a lot of different levels in the applications I have a hand in. 
+If you're looking for a helping hand with a website, updating and/or formalizing your brand, or maybe just some solid advice, I would be happy to talk. Check out my <a href="/projects" class="internal-link">portfolio</a>, and <a href="/contact" class="internal-link">drop a line</a> when you're ready. 
 
-Anyway, you got here! The rest of the site has more to say &mdash; check it out. 
+For those who got here from my LinkedIn, Indeed, or [resume](/downloads/mark_harwood_resume.pdf) &mdash; hello! I am actively job-huting, with a particular interest in pivoting toward a data-centric role. I am working on some data visualization projects _right now_, and will be posting the results & code here when they're done. 
 
-If you're interested in connecting for a project or work opportunity, <a href="/contact" class="internal-link">get in touch</a> with some details on it and we'll connect. 
+As of 2024, <a href="/blog/making-my-site" class="internal-link">this current website</a> is old! When my portfolio is in place, I will be rewriting it to be more dynamic. 
+
+Make yourself at home. 

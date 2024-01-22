@@ -8,7 +8,7 @@ const BlogPostLink = ({ post }) => (
     <Link className="internal-link" to={post.frontmatter.path}>
       {post.frontmatter.title}
     </Link>
-    <p className="blog-post-item__description">{post.frontmatter.description}</p>
+    <p className="blog-post-item__description">{post.frontmatter.description} ({post.frontmatter.date})</p>
   </div>
 )
 
