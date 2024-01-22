@@ -6,10 +6,13 @@ import NavBar from './navBar'
 import Footer from './footer'
 import './layout.scss'
 import '../styles/global.scss'
+import MorkLogo from '../images/mork_logo.svg'
 
 const Layout = ({ children }) => (
   <div className="layout">
-    <Link to="/" className="logo">Mark Harwood</Link>
+    <Link to="/" className="logo">
+      <MorkLogo/>
+    </Link>
     <NavBar />
     <main className="fadeInMain">
       {children}

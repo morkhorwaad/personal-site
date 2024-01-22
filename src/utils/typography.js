@@ -4,18 +4,43 @@ const typography = new Typography({
   baseFontSize: "24px",
   baseLineHeight: 1.666,
   blockMarginBottom: 1,
-  headerFontFamily: [
-    "Raleway",
-    "Helvetica Neue",
-    "Segoe UI",
-    "Helvetica",
-    "Arial",
-    "sans-serif",
+  googleFonts: [
+    {
+      name: 'EB Garamond',
+      styles: [
+        '400',
+        '400 Italic',
+      ]
+    },
+    {
+      name: 'Jost',
+      styles: [
+        '300',
+        '300 Italic',
+        '500', 
+        '500 Italic',
+        '700',
+        '700 Italic'
+      ]
+    }
   ],
-  bodyFontFamily: ["Merriweather", "Georgia", "serif"],
+  bodyFontFamily: [
+    "EB Garamond", 
+    "Merriweather", 
+    "Georgia", 
+    "serif"
+  ],
+  headerFontFamily: [
+    "Jost", 
+    "Helvetica Neue",
+    "Helvetica", 
+    "Arial", 
+    "sans-serif"
+  ],
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
-    'a.logo': {
-      fontFamily: ['Raleway', 'sans-serif'].join(','),
+    'nav > a': {
+      fontFamily: ["Jost", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"].join(','),
+      fontWeight: 500,
     },
     'p.blog-post-item__description': {
       ...adjustFontSizeTo('18px'),

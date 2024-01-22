@@ -6,7 +6,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Mark Sebastian Harwood`,
-    description: `Mark Harwood is a web developer, UX enthusiast, aspiring designer, and learning human. He does cyber. This is his site.`,
+    description: `Mark Harwood is a web developer, UX & design enthusiast, aspiring data goblin, and learning human. He does cyber. This is his site.`,
     author: `@morkhorwaad`,
   },
   trailingSlash: "never",
@@ -45,6 +45,14 @@ module.exports = {
       options: {
         path: `${__dirname}/src/markdown`,
         name: "markdown"
+      }
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images/ // See below to configure properly
+        }
       }
     },
     {

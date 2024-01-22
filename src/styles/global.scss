@@ -5,7 +5,15 @@ html {
     margin: $global-margin-tb $global-margin-lr 0 $global-margin-lr !important;
     width: $total-width;
     background-color: $background-color;
-    color: $black;
+    color: $text-color;
+
+    body {
+        color: $text-color;
+
+        p {
+            color: $black;
+        }
+    }
 }
 
 ::selection {
@@ -66,8 +74,9 @@ a.internal-link {
         content: "";
         background-color: $primary-color;
         height: 2px;
-        width: 100%;
+        width: 108%;
         bottom: 4px;
+        left: -4%;
         transition: height .4s;
     }
 

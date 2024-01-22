@@ -33,6 +33,7 @@ nav.navBar {
             display: flex;
             align-items: center;
             width: 100%;
+            justify-content: center;
 
             a {
                 display: block;
@@ -87,6 +88,7 @@ button.menuButton {
 nav.navBar a {
     text-decoration: none;
     border: none;
+    font-weight: 500;
 
     &:hover {
         color: $primary-color;
