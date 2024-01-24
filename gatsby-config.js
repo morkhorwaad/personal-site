@@ -1,7 +1,4 @@
 const rhythm  = require('./src/utils/typography.js').rhythm;
-require("dotenv").config({
-  path:`.env.${process.env.NODE_ENV}`,
-});
 
 module.exports = {
   siteMetadata: {
@@ -83,7 +80,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`, // https://www.gatsbyjs.com/plugins/gatsby-plugin-google-gtag/
       options: {
         trackingIds: [
-          process.env.GA_TRACKING_ID, // Google Analytics / GA
+          "G-MF2FBLKBH4", // Google Analytics / GA
         ],
         // This object gets passed directly to the gtag config command
         // This config will be shared across all trackingIds
