@@ -5,25 +5,27 @@
   "version": "0.1.0",
   "author": "Mark Harwood <msharwood12@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.9.2",
+    "gatsby": "^5.13.1",
     "gatsby-image": "^2.2.3",
-    "gatsby-plugin-manifest": "^2.0.9",
-    "gatsby-plugin-offline": "^2.1.3",
-    "gatsby-plugin-react-helmet": "^3.0.2",
-    "gatsby-plugin-sharp": "^2.1.5",
-    "gatsby-plugin-typography": "^2.2.5",
-    "gatsby-remark-copy-linked-files": "^2.1.0",
-    "gatsby-remark-embed-gist": "^1.1.7",
-    "gatsby-remark-images": "^3.1.2",
-    "gatsby-source-filesystem": "^2.0.33",
-    "gatsby-transformer-remark": "^2.3.12",
-    "gatsby-transformer-sharp": "^2.1.8",
-    "prop-types": "^15.6.2",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-helmet": "^5.2.1",
-    "react-typography": "^0.16.18",
-    "typography": "^0.16.18"
+    "gatsby-plugin-google-gtag": "^5.13.0",
+    "gatsby-plugin-manifest": "^5.13.0",
+    "gatsby-plugin-offline": "^6.13.0",
+    "gatsby-plugin-react-helmet": "^6.13.0",
+    "gatsby-plugin-react-svg": "^3.3.0",
+    "gatsby-plugin-sharp": "^5.13.0",
+    "gatsby-plugin-typography": "^5.13.0",
+    "gatsby-remark-copy-linked-files": "^6.13.0",
+    "gatsby-remark-embed-gist": "^1.2.1",
+    "gatsby-remark-images": "^7.13.0",
+    "gatsby-source-filesystem": "^5.13.0",
+    "gatsby-transformer-remark": "^6.13.0",
+    "gatsby-transformer-sharp": "^5.13.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-typography": "^0.16.23",
+    "typography": "^0.16.24"
   },
   "keywords": [
     "gatsby"
@@ -37,10 +39,10 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
-    "gatsby-plugin-sass": "^2.0.7",
-    "node-sass": "^4.11.0",
-    "prettier": "^1.18.2",
-    "react-icons": "^3.7.0"
+    "gatsby-plugin-sass": "^6.13.0",
+    "node-sass": "^9.0.0",
+    "prettier": "^3.2.4",
+    "react-icons": "^5.0.1"
   },
   "repository": {
     "type": "git",

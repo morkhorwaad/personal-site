@@ -1,27 +1,32 @@
 // global colors
-$black: hsla(0, 0%, 0%, 0.8);
-$white: #fefefe;
-$red: red;
-$green: #4B966E;
-$blue: 	#579CBF;
+$black: #414141;
+$white: #e7e5d6;
+$red: #ea4f51;
+$light-blue: #93c5e2;
+$blue: 	#1b60a9;
 
 // color role assignment
-$primary-color: $blue;
+$primary-color: $black;
 $primary-complement: $white;
-$secondary-color: $green;
-$error-color: $red;
+
+$accent-color: $red;
+$accent-complement: $white; 
+
 $background-color: $white;
 $text-color: $black;
+$logo-color: $black;
+$icon-link-color: $black;
 
 // layout stuff
 $global-margin-tb: 5vh;
 $global-margin-lr: 10vw;
 $nav-height: 50px;
 $footer-height: 50px;
-$grid-gap: 5vh;
+$grid-row-gap: 5vh;
+$grid-col-gap: 5px;
 $total-width: calc(100vw - 2 * #{$global-margin-lr});
 $total-height: calc(100vh - #{$global-margin-tb});
-$main-height: calc(#{$total-height} - #{$nav-height} - #{$footer-height} - 2 * #{$grid-gap});
+$main-height: calc(#{$total-height} - #{$nav-height} - #{$footer-height} - 2 * #{$grid-row-gap});
 
 
 // media query breakpoints

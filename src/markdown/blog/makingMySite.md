@@ -1,6 +1,6 @@
 ---
 path: "/blog/making-my-site"
-date: "2019-11-07"
+date: "2019-07-11"
 title: "Making a personal site"
 description: "It's taken long enough..."
 ---

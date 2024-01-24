@@ -6,6 +6,10 @@ import "./blogPost.scss";
 
 const BlogPost =({ data }) => {
   const post = data.markdownRemark;
+  if(!post) {
+    return (<p>NO POST</p>)
+  }
+
   return (
     <Layout>
       <article>

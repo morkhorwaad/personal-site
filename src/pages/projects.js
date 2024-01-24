@@ -24,10 +24,12 @@ const ProjectsPage = ({
 
     <section dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
 
+    <hr></hr>
+
     <section>
       {Projects.length > 0 
         ? {Projects}
-        : <p>Right now, all of my projects are works in progress. Take a look at <a href="https://www.github.com/morkhorwaad">my GitHub</a> to see what I'm up to, and back here to see the writeup when I'm done!</p>
+        : <p><b>Oh jeez.</b> Right now, all of my projects are works in progress. Take a look at <a href="https://www.github.com/morkhorwaad">my GitHub</a> to see what I'm up to, and back here to see the writeup when I'm done!</p>
       }
     </section>
   </Layout>
@@ -38,7 +40,7 @@ export const pageQuery = graphql`
 query {
   allMarkdownRemark(
    filter: { fileAbsolutePath: {regex : "/markdown/projects/"} },
-   sort: { order: DESC, fields: [frontmatter___date]}
+   sort: {frontmatter: {date: DESC}}
  ) {
      edges {
        node {

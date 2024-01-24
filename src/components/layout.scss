@@ -4,9 +4,10 @@ div.layout {
     display: grid;
     grid-template-columns: 20vw repeat(3, 1fr);
     grid-template-rows: $nav-height 1fr $footer-height;
-    grid-row-gap: $grid-gap;
+    grid-row-gap: $grid-row-gap;
+    grid-column-gap: $grid-col-gap;
     grid-template-areas:
-        "title title title title"
+        "title . . ."
         "nav main main main"
         "footer main main main";
     height: $total-height;
@@ -21,13 +22,33 @@ div.layout {
 
 main {
     grid-area: main;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: clip;
+    scrollbar-color: $primary-color $white;
 }
 
 main.fadeInMain {
     animation-name: fadeIn;
     animation-duration: .6s;
 }
+
+.hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+  }
+  
+  .show-scrollbar {
+    -ms-overflow-style: auto;  /* IE and Edge */
+    scrollbar-width: auto;  /* Firefox */
+  }
+  
+  .show-scrollbar::-webkit-scrollbar {
+    display: block; /* Chrome, Safari, Opera*/
+  }
 
 @keyframes fadeIn {
     from {
@@ -40,8 +61,24 @@ main.fadeInMain {
 
 .logo {
     grid-area: title;
-    line-height: initial;
-    letter-spacing: 2px;
-    justify-self: start;
-    align-self: center;
+}
+
+.logo > svg {
+    object-fit: cover;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+    margin-left: -5px;
+
+    path {
+        transition: fill 0.2s;
+        fill: $logo-color;
+    }
+
+    &:hover {
+        path {
+            fill: $accent-color;
+        }
+        
+    }
 }

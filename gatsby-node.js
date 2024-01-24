@@ -15,7 +15,7 @@ exports.createPages = async function ({ actions, graphql }) {
               html
             }
           }
-        }
+        },
         projects:allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/markdown/projects/"}}) {
           edges {
             node {
@@ -33,19 +33,37 @@ exports.createPages = async function ({ actions, graphql }) {
       }
     `);
 
+    /** TO ADD:
+     * projects:allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/markdown/projects/"}}) {
+          edges {
+            node {
+              excerpt(pruneLength: 250)
+              id
+              frontmatter {
+                title
+                path
+                date(formatString: "MMMM DD, YYYY")
+              }
+              html
+            }
+          }
+        }
+     */
+
     data.blog.edges.forEach(edge => { 
-        const path = edge.node.frontmatter.path   
+        const blogPath = edge.node.frontmatter.path;   
+        console.log("BLOG POST PATH: " + blogPath);
         actions.createPage({ 
-            path, 
-            component: require.resolve(`./src/templates/blogPost.js`), 
-        }) 
+            path: blogPath, 
+            component: require.resolve(`./src/templates/blogPost.js`)
+        }); 
     });
 
     data.projects.edges.forEach(edge => { 
-      const path = edge.node.frontmatter.path   
+      const projPath = edge.node.frontmatter.path;  
       actions.createPage({ 
-          path, 
-          component: require.resolve(`./src/templates/projectPage.js`), 
-      }) 
+          path: projPath, 
+          component: require.resolve(`./src/templates/projectPage.js`)
+      }); 
     })
 }
